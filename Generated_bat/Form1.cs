@@ -13,6 +13,7 @@ namespace Generated_bat
 {
     public partial class Form1 : Form
     {
+        
         public Form1()
         {
             InitializeComponent();
@@ -46,6 +47,20 @@ namespace Generated_bat
             catch(SystemException ex)
             {
                 MessageBox.Show(ex.Message);
+            }
+
+        }
+        private void bat(string ip, string name, string password, string pc_name)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            for (int z = 0; z < dataGridView1.RowCount; z++)
+            {
+                bat(dataGridView1[z, 4].Value.ToString(), dataGridView1[z, 5].Value.ToString(), dataGridView1[z, 6].Value.ToString(), dataGridView1[z, 2].Value.ToString());
+                MessageBox.Show(dataGridView1[1, z].Value.ToString());
             }
         }
     }

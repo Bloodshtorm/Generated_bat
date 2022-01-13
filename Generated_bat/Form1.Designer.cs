@@ -38,6 +38,7 @@ namespace Generated_bat
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,7 +60,7 @@ namespace Generated_bat
             this.Column8});
             this.dataGridView1.Location = new System.Drawing.Point(13, 13);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(1387, 599);
+            this.dataGridView1.Size = new System.Drawing.Size(1387, 597);
             this.dataGridView1.TabIndex = 0;
             // 
             // Column1
@@ -102,11 +103,22 @@ namespace Generated_bat
             this.Column8.HeaderText = "№ каб.";
             this.Column8.Name = "Column8";
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(13, 613);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(1387, 23);
+            this.button1.TabIndex = 1;
+            this.button1.Text = "Сгенерировать батники";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1412, 640);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -127,6 +139,7 @@ namespace Generated_bat
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column7;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
+        private System.Windows.Forms.Button button1;
     }
 }
 
